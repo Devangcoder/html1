@@ -4,7 +4,7 @@
     <title> Devang's book club </title>
 </head>
 <body>
-
+<header>
 <!--Heading-->
 <h1> Devang's book club</h1>
 <!--Welcome Audio-->
@@ -13,33 +13,50 @@
     <Source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"type="audio/mpeg">
         Your browser does not support the audio element.
 </audio>
+</header>
+<main></main>
 <!--Intro-->
+<section>
 <h2> welcome to Devang's book club</h2>
 <p>Devang's book club is more than just a place to discuss stories—it's where ideas come alive, friendships deepen, and every page turns into a shared adventure.</p>
-<!--meantors section-->
+</section>
+
+<!--mentors section-->
+<section>
 <h2>meet our menntors</h2>
+<!--using non-semantic div inside a semantic section-->
+
 <ul> 
+    <div>
     <li>
 <h3>Ms. Qulsum </h3>
 <img src="https://internationalteacherstraining.com/blog/wp-content/uploads/2018/08/171219-teacher-stock.jpg" alt="Ms.Qulsum" width="150" height="150"> <br>
 <p>She mentors students in computer applications and inspires them through interactive learning.</p>
    <a href="https://en.wikipedia.org/wiki/Computer_application" target="_blank" > Learn more </a>
 </li> 
+</div>
+<div>
     <li>
 <h3>Ms. Sana</h3>
 <img src="https://static.vecteezy.com/system/resources/previews/030/564/819/non_2x/ai-generative-beautiful-teacher-standing-confidently-in-front-of-the-primary-school-classroom-and-smiling-free-photo.jpg" alt="Ms.Sana" width="150" height="150"> <br>
 <p>She guides students in literature and creating writting. She holds a Master's degree in literature.</p>
     <a href="https://en.wikipedia.org/wiki/Literature" target="_blank" > What is literature? </a>   
 </li>
+</div>
 </ul>
+</section>
 <!--Popular books-->
+<section>
 <h2>Popular Books We Recommend</h2>
 <table border="1" cellpading="5">
+    <thead>
     <tr>
 <th>Book Title</th>
     <th>Author</th>
     <th>Genre</th>
     </tr>
+    </thead>
+    <tbody>
     <tr>
         <td>The secret garden</td>
         <td>Frances Hodgson</td>
@@ -55,32 +72,48 @@
             <td>J.K. Rowling</td>
             <td>Fantasy</td>
     </tr>
+    </tbody>
 </table>
+</section>
 <!--content-2-->
+<article>
 <h2>Reader Reflection</h2>
 <h3>The secret garden </h2>
 <p><strong>Zara: </strong><q> This book made me appreciate nature and friendships.A beautiful read!</q></p>
 <p><strong>Rohan: </strong><q> I found this book inspiring and calming. higly recommended!</q></p>
+</article>
 <!--Fun activities-->
+<section>
 <h2>Fun activities</h2>
 <ol>
     <li>Book Character Dress-Up Day</li>
     <li>Write Your Own Ending</li>
     <li>Design A Book cover</li>
 </ol>
+</section>
+<!--viedeos using iframes (non-sematic)-->
+<section>
 <h2>Why reading is awesome!</h2>
 <iframe width="560" height="315" 
 src="https://www.youtube.com/embed/T3-zHBmfQSg?si=t54SOW48DnP2A8qx" 
 title="YouTube video player" frameborder="0" 
 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
 referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>"
+</section>
+<section>
 <h2>Book club videos</h2>
+<div>
 <video width="560" height="315" controls>
     <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
     Your browser doesn't support the video tag.
 </video>
+</div>
+</section>
+</main>
+<footer>
 <p>Contact us: Ms.Qulsum</p>
 <p>Phone no: +911234567890</p>
 <address> Hope lane, Srinagar, Jammu & Kashmir-190001</address>
+</footer>
 </body>
 </html>
