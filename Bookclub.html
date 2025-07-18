@@ -2,8 +2,90 @@
 <html>
 <head>
     <title> Devang's book club </title>
+    <style>
+        h1 {
+            color: darkblue;
+             text-align: center;
+            font-size: 40px;
+        }
+        h2 {
+            color:#008080;
+            font-size: 28px;
+            margin-top: 30px;
+        }
+        h3{
+            color: #ff4800;
+        }
+            p, li {
+                font-size: 16px;
+            }
+            table {
+                width: 80%;
+                border-collapse: collapse;
+                margin: 15px 0;
+            }
+            table, th, td {
+            border: 5px solid royalblue;
+            }
+
+            th {
+            background-color:#D0eaff;
+            font-weight: bold;
+            }
+
+            td {
+                background-color: #f9f9f9;
+                padding: 8px;
+                text-align: center;
+            }
+            a {
+                color: #0066cc;
+                text-decoration: none;
+            }
+
+            a:hover {
+                text-decoration: underline;
+                color:#004080;
+            }
+            img {
+                border-radius: 10px;
+                margin-top: 10px;
+            }
+            footer {
+                margin-top: 40px;
+                padding-top: 20px;
+                border-top: 2px dashed #ccc
+            }
+            audio, video, Iframe {
+                display: block;
+                margin: 15px auto;
+            }
+            body 
+            {
+                text-align: center;
+            }
+            /* class selector */
+            .mentor-card {
+                background-color: #fff8dc;
+                border: 2px dashed #ffc107;
+                padding: 10px;
+                margin: 15px 0;
+                border-radius: 10px;
+            }
+            /*id selector*/
+            #activities
+            {
+            background-color: #e0f7fa;
+            padding: 10px;
+            border-left: 5px solid #00acc1;
+            }
+            #activities ol {
+                list-style-type: none; /* hides 1, 2, 3 */
+                padding-left: 0%;
+            }
+    </style>
 </head>
-<body>
+<body style="background-color: #d5eaf8; font-family: Comic Sans MS, Cursive, sans-serif; color: #333; padding: 20px;">
 <header>
 <!--Heading-->
 <h1> Devang's book club</h1>
@@ -26,24 +108,18 @@
 <h2>meet our menntors</h2>
 <!--using non-semantic div inside a semantic section-->
 
-<ul> 
-    <div>
-    <li>
+    <div class="mentor-card">
 <h3>Ms. Qulsum </h3>
 <img src="https://internationalteacherstraining.com/blog/wp-content/uploads/2018/08/171219-teacher-stock.jpg" alt="Ms.Qulsum" width="150" height="150"> <br>
 <p>She mentors students in computer applications and inspires them through interactive learning.</p>
    <a href="https://en.wikipedia.org/wiki/Computer_application" target="_blank" > Learn more </a>
-</li> 
 </div>
-<div>
-    <li>
+<div class="mentor-card">
 <h3>Ms. Sana</h3>
 <img src="https://static.vecteezy.com/system/resources/previews/030/564/819/non_2x/ai-generative-beautiful-teacher-standing-confidently-in-front-of-the-primary-school-classroom-and-smiling-free-photo.jpg" alt="Ms.Sana" width="150" height="150"> <br>
 <p>She guides students in literature and creating writting. She holds a Master's degree in literature.</p>
     <a href="https://en.wikipedia.org/wiki/Literature" target="_blank" > What is literature? </a>   
-</li>
 </div>
-</ul>
 </section>
 <!--Popular books-->
 <section>
@@ -83,7 +159,7 @@
 <p><strong>Rohan: </strong><q> I found this book inspiring and calming. higly recommended!</q></p>
 </article>
 <!--Fun activities-->
-<section>
+<section id="activities">
 <h2>Fun activities</h2>
 <ol>
     <li>Book Character Dress-Up Day</li>
