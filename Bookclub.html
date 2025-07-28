@@ -3,6 +3,51 @@
 <head>
     <title> Devang's book club </title>
     <style>
+        body {
+            background-color: #f0f8ff;
+            align-items: center;
+            font-family: comic Sans MS, cursive, sans-serif;
+            color: #333;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        header {
+           align-items: center;
+           justify-content: center;
+           text-align: center;
+           padding: 20px 
+        }
+        header div {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 20px;
+        }
+        .intro{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 20px;
+            background-color: lightgray;
+            gap: 20px; 
+        }
+            /*adds border to heading */
+            .intro h2 {
+                border: 2px solid teal;
+                padding: 10px;
+                border-radius: 8px;
+            }
+            .intro p {
+                border: 2px dashed orange;
+                padding: 10px;
+                border-radius: 8px;
+            }
         h1 {
             color: darkblue;
              text-align: center;
@@ -112,15 +157,49 @@
                 border: 2px solid #ffd580;
                 border-radius: 12px;
                 box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+                opacity: 0.7;
+                position: relative;
+                top: 10px;
+                left: 0px;
                 transition: transform 0.3s ease;
             }
             .activities-box:hover {
                 transform: translateY(-5px);
                 box-shadow: 0 6px 25px rgba(0, 0, 0, 0.25);
+                opacity: 1;
             }
             .activities-box ol {
                 text-align: left;
                 margin-left: 40px;
+                list-style-type: none;
+            }
+            .activities-box ol li:before {
+                content: "📚"
+            }
+            .join-note {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #ffeb3b;
+            padding: 10px 15px;
+            border-radius: 10px;
+            font-weight: bold;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+            z-index: 100;
+            }
+            .featured-books {
+                position: relative;
+            }
+            .badge {
+                position: absolute;
+                top: -10px;
+                right: -10px;
+                background-color: red;
+                color: white;
+                padding: 5px 10px;
+                font-weight: bold;
+                border-radius: 8px;
+                z-index: 10;
             }
     </style>
 </head>
@@ -129,15 +208,16 @@
 <!--Heading-->
 <h1> Devang's book club</h1>
 <!--Welcome Audio-->
+<div>
 <h2>Welcome Message</h2>
 <audio controls>
     <Source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"type="audio/mpeg">
         Your browser does not support the audio element.
 </audio>
+</div>
 </header>
-<main></main>
 <!--Intro-->
-<section>
+<section class="intro">
 <h2> welcome to Devang's book club</h2>
 <p>Devang's book club is more than just a place to discuss stories—it's where ideas come alive, friendships deepen, and every page turns into a shared adventure.</p>
 </section>
@@ -162,7 +242,8 @@
 </div>
 </section>
 <!--Popular books-->
-<section>
+<section class="featured-books">
+<div class="badge">New!</div>
 <h2>Popular Books We Recommend</h2>
 <table border="1" cellpading="5">
     <thead>
@@ -231,5 +312,6 @@ referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>"
 <p>Phone no: +911234567890</p>
 <address> Hope lane, Srinagar, Jammu & Kashmir-190001</address>
 </footer>
+<div class="join-note">📚 Join the club Today!</div>
 </body>
 </html>
