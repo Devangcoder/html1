@@ -201,6 +201,41 @@
                 border-radius: 8px;
                 z-index: 10;
             }
+            .intro {
+            grid-area: intro;
+            }
+            .mentor-section {
+                grid-area: mentors;
+            }
+            .featured-books {
+                grid-area: books;
+            }
+            .reflection-section {
+                grid-area: reflections;
+            }
+            .activities-box {
+            grid-area: activities;
+            }
+            .video-section {
+                grid-area: video;
+            }
+            .book-club-video-section {
+                grid-area: clubvideo;
+            }
+            .main-grid {
+                display: grid;
+                grid-template-areas:
+                "intro intro"
+                "mentors mentors"
+                "books reflections"
+                "activities video"
+                "clubvideo clubvideo";
+                grid-template-columns: 1fr 1fr;
+                gap: 20px;
+                padding: 20px;
+                width: 100%;
+                margin: auto;
+            }
     </style>
 </head>
 <body style="background-color: #d5eaf8; font-family: Comic Sans MS, Cursive, sans-serif; color: #333; padding: 20px;">
@@ -216,6 +251,7 @@
 </audio>
 </div>
 </header>
+<main class="main-grid">
 <!--Intro-->
 <section class="intro">
 <h2> welcome to Devang's book club</h2>
@@ -223,7 +259,7 @@
 </section>
 
 <!--mentors section-->
-<section>
+<section class="mentor-section">
 <h2>meet our menntors</h2>
 <!--using non-semantic div inside a semantic section-->
 <div class="mentor-container">
@@ -273,7 +309,7 @@
 </table>
 </section>
 <!--content-2-->
-<article>
+<article class="reflection-section">
 <h2>Reader Reflection</h2>
 <h3>The secret garden </h2>
 <p><strong>Zara: </strong><q> This book made me appreciate nature and friendships.A beautiful read!</q></p>
@@ -289,7 +325,7 @@
 </ol>
 </section>
 <!--viedeos using iframes (non-sematic)-->
-<section>
+<section class="video-section">
 <h2>Why reading is awesome!</h2>
 <iframe width="560" height="315" 
 src="https://www.youtube.com/embed/T3-zHBmfQSg?si=t54SOW48DnP2A8qx" 
@@ -297,7 +333,7 @@ title="YouTube video player" frameborder="0"
 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
 referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>"
 </section>
-<section>
+<section class="book-club-video-section">
 <h2>Book club videos</h2>
 <div>
 <video width="560" height="315" controls>

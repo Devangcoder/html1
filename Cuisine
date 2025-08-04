@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head></head>
+    <title>Cuisines of Australia</title>
+    <body>
+        <h1> Australian Cuisines </h1>
+        <div>
+            <p id="description">Traditional Australian foods include a mix of native Aboriginal cuisine and dishes developed from European influences. Key examples include Fish and Chips, Tim Tams!, Fairy Bread, and various bush tucker ingredients from Aboriginal traditions. More widely recognized are dishes like meat pies, Anzac biscuits, lamingtons, Vegemite on toast, and the pavlova.</p>
+        </div>
+</head>
+<ul>
+    <li>
+        <a href="Fairy Bread">
+            fairybread
+        </a>
+    </li>
+    <li>
+        
+    </li>
+</ul>
+</html>
