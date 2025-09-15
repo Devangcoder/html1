@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> My hobbies</title>
+    </head>
+    <body style="text-align: center; font-family: Arial;">
+    <h1>Share your hobbies</h1>
+    <p>Type your hobby and click the button to see it displayed bellow!</p>
+    <input type="text" id="hobbyInput" placeholder="Enter your hobbby">
+    <button onclick="showHobby()">Add hobby</button>
+    <h2>My hobbies</h2>
+    <ul id="hobbyList"></ul>
+    <script>
+        function showHobby () {
+            let input=doccument.getElementById ("hobbyInput").value;
+        if (input.trim () !=="") {
+            let li = doccument.createElement ("li");
+            li.textContent =input
+            document.getElementById("hobbyList").appendChild(li);
+            document.getElementById("hobbyInput").value ="";
+        } else {
+            alert("please enter a hobby!");
+        }
+        }
+    </script>
+    </body>
+</html>
