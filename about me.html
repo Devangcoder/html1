@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>All about me</title>
+        <style>
+            body.Dark {
+                color: white;
+                background-color: rgb(56, 30, 187);
+            }
+            button {
+                display: block;
+                margin: 10px;
+            }
+            .textEntry {
+                margin-top: 12px;
+                margin-bottom: 15px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>About me</h1>
+        <p id="story">Press this to find what i my favorite color</p>
+        <button onclick="goDark()">Get in the mood</button>
+        <div class="textEntry">Try to guess my favorite sport and what is my name <input type="text" id="name"></div>
+        <button onclick="typeAndScream ()">Click to find my favorite sport and my name!</button>
+        <button onclick="FinishTheStory ()">Press to find more information about me!</button>
+        <script>
+             function typeAndScream () {
+                var PersonName =document.getElementById ("name").value;
+                alert ("My favourite sport is football and my name is Devang! ");
+             }
+             function goDark () {
+              document.body.className = "Dark";
+             }
+             function FinishTheStory () {
+                document.getElementById("story").innerHTML = "My name is devang and I am from India but now i live in Australia, My favourite hobby is to draw and play sport and i love coding!";
+             }
+        </script>
+    </body>
+    </html>
