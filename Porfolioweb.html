@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Landing page</title>
+    </head>
+    <style>
+    body {
+        text-align: center;
+    }
+    nav {
+        background-color:#e6e6e6;
+        padding: 10px;
+    }
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+    }
+    li {
+        float: left;
+    }
+    li a {
+        display: block;
+    }
+    li a:hover {
+        background-color: rgb(red, green, blue)(219, 130, 130);
+    }
+    </style>
+    <body>
+        <nav>
+            <ul>
+                <li><a href="index.html"home></a></li>
+                <li><a href="6-about.html"html></a></li>
+                <li><a href="6-contact.html"contact></a></li>
+            </ul>
+        </nav>
+        <h2>Interesting information</h2>
+        <img src="https://wallpapercave.com/wp/UBWCF1e.jpg"width="300px">
+        <br >
+        <button onclick="tiger();">Learn more!</button>
+        <p id="tiger-info"></p>
+       <img src="https://static.vecteezy.com/system/resources/previews/026/525/162/large_2x/lion-animal-isolated-photo.jpg"width="300px">
+        <br>
+        <button onclick="lion();">Learn more!</button>
+        <p id="lion-info"></p> 
+        <script>
+            function tiger() {
+                document.getElementById("tiger-info").innerHTML=
+                "Tigers (Panthera tigris) are the largest cats in the world, known for their powerful build and distinctive orange fur with black stripes"
+            }
+            function lion() {
+                document.getElementById("lion-info").innerHTML=
+                "Lions have strong, compact bodies and powerful forelegs, teeth and jaws for pulling down and killing prey"
+            }
+        </script>
+    </body>
+</html>
