@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess The Number Game</title>
+    <style>
+    </style>
+    </head>
+    <body>
+        <h1>🎲 Guess the number!</h1>
+        <p>Im thinking of a number that is between 1-10, can you try guess it?!</p>
+        <button onclick="guessNumber()">Try your lucuk!!</button>
+        <div id="message"></div>
+        <script>
+            function guessNumber() {
+                const secret= Math.floor(Math.random() * 10) + 1;
+                const userGuess = prompt("Enter your guess (1-10):");
+                const guess= Number(userGuess);
+                if (guess === secret) {
+                document.getElementById("message").textContent = "🎉 Congratulations! You guessed the correct number";
+        document.body.stye.bagckgroundColor="90ee90";
+             } else {
+                document.getElementById("message").textContent = `❌ Sorry, the correct number was ${secret}. Try again!`;
+                document.body.style.backgroundColor="ffcccb";
+             }
+            }
+        </script>
+    </body>
+</html>
