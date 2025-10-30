@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Magic Color Box</title>
+    <style>
+        body {
+            font-family: poppins, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+            background-color: #f0f8ff;
+        }
+        h1 {
+            color: #333;
+        }
+        #box {
+            width: 150px;
+            height: 150px;
+            margin: 30px auto;
+            border-radius: 10px;
+            background-color: skyblue;
+            box-shadow: 0 0 10px gray;
+            transition: background-color 0.5s;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+    </head>
+    <body>
+        <h1>🎨Magic colour box</h1>
+        <div id="box"></div>
+        <button onclick="changeColour()">Change colour!</button>
+        <script>
+            function changeColour() {
+                // array of colors
+                const colors = ["red", "blue", "green", "yellow", "purple", "orange", "pink", "cyan", "magenta", "lime"];
+                // pick a random colour
+                const randomIndex = Math.floor(Math.random() * colors.length);
+                const newColor = colors[randomIndex];
+                // change box colour
+                document.getElementById("box").style.backgroundColor = newColor;
+            }
+        </script>
+    </body>
+</html>
