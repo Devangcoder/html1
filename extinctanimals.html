@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Extinct Animals</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #eef6ff;
+            color: #333;
+        }
+
+        header {
+            background-color: #003366;
+            color: white;
+            padding: 25px;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #002244;
+            padding: 12px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .hero {
+            background-image: url('https://images.unsplash.com/photo-1500530855697-b586d89ba3ee');
+            background-size: cover;
+            background-position: center;
+            height: 300px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 2.5rem;
+            font-weight: bold;
+            text-shadow: 2px 2px 5px black;
+        }
+
+        .container {
+            padding: 40px;
+            max-width: 1100px;
+            margin: auto;
+        }
+
+        h2 {
+            color: #003366;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .card {
+            background: white;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+
+        .card img {
+            width: 100%;
+            border-radius: 10px;
+            height: 180px;
+            object-fit: cover;
+        }
+
+        .section {
+            margin-top: 50px;
+        }
+
+        footer {
+            background-color: #003366;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 40px;
+        }
+
+        @media (max-width: 768px) {
+            .grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>Extinct Animals</h1>
+    <p>Discover the creatures that once lived on Earth</p>
+</header>
+
+<nav>
+    <a href="#home">Home</a>
+    <a href="#animals">Animals</a>
+    <a href="#causes">Causes</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<div class="hero" id="home">
+    Remembering Lost Species
+</div>
+
+<div class="container">
+
+    <!-- SECTION 1 -->
+    <div class="section" id="animals">
+        <h2>Famous Extinct Animals</h2>
+
+        <div class="grid">
+
+            <!-- DODO -->
+            <div class="card">
+                <img src="https://th.bing.com/th/id/R.55c1f0c14826f8e3139a243485d4c76e?rik=0J5os9i%2f9HOgaw&riu=http%3a%2f%2fpluspng.com%2fimg-png%2fpng-dodo-dodo-earth-4552-png-803.png&ehk=TH99uTllMY1Qi%2b4JXv0ED9FZa4NVJXmQQI0iRPjOKsM%3d&risl=&pid=ImgRaw&r=0" alt="Dodo">
+                <h3>Dodo Bird</h3>
+                <p><strong>Extinct:</strong> 1681</p>
+                <p><strong>Location:</strong> Mauritius</p>
+                <p><strong>Cause:</strong> Hunting + invasive animals</p>
+            </div>
+
+            <!-- WOOLLY MAMMOTH -->
+            <div class="card">
+                <img src="https://tse3.mm.bing.net/th/id/OIP.-1r19HZXrhisw-IlgCtRnAHaFK?rs=1&pid=ImgDetMain&o=7&rm=3" alt="Mammoth">
+                <h3>Woolly Mammoth</h3>
+                <p><strong>Extinct:</strong> 4,000 years ago</p>
+                <p><strong>Location:</strong> Siberia, North America</p>
+                <p><strong>Cause:</strong> Climate change + hunting</p>
+            </div>
+
+            <!-- TASMANIAN TIGER -->
+            <div class="card">
+                <img src="https://www.thoughtco.com/thmb/KM-HO1XJ95Qr4lgEjFdLeunvYjA=/2929x1796/filters:fill(auto,1)/TasmanianTigers-5c5a467c46e0fb00012bb3e1.jpg" alt="Tasmanian Tiger">
+                <h3>Tasmanian Tiger</h3>
+                <p><strong>Extinct:</strong> 1936</p>
+                <p><strong>Location:</strong> Australia, Tasmania</p>
+                <p><strong>Cause:</strong> Hunting + habitat loss</p>
+            </div>
